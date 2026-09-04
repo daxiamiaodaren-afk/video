@@ -7,126 +7,28 @@
   <title>中秋庆贺短片</title>
   <style>
     :root{
-      --bg: #f4f7fb;
-      --panel: #ffffff;
-      --text: #16202a;
-      --muted: #5c6b7a;
-      --line: #dbe3ec;
-      --accent: #1f6feb;
-      --accent-2: #e97d2f;
-      --accent-3: #0f766e;
+      --bg:#f4f7fb; --panel:#fff; --text:#16202a; --muted:#5c6b7a;
+      --line:#dbe3ec; --accent:#1f6feb; --accent-2:#e97d2f; --accent-3:#0f766e;
     }
     *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
-      background:
-        linear-gradient(180deg, #eff5ff 0%, #f7fafc 240px, var(--bg) 100%);
-      color:var(--text);
-    }
-    .shell{
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 28px 20px 48px;
-    }
-    .hero{
-      padding: 28px 0 18px;
-      border-bottom: 1px solid rgba(31,111,235,.14);
-    }
-    .kicker{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: rgba(31,111,235,.08);
-      color: var(--accent);
-      font-size: 13px;
-      font-weight: 600;
-    }
-    h1{
-      margin: 14px 0 10px;
-      font-size: clamp(34px, 5vw, 54px);
-      line-height: 1.08;
-      letter-spacing: 0;
-    }
-    .lead{
-      max-width: 760px;
-      margin: 0;
-      font-size: 17px;
-      line-height: 1.75;
-      color: var(--muted);
-    }
-    .meta{
-      margin-top: 18px;
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-    .meta span{
-      padding: 7px 12px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: rgba(255,255,255,.7);
-    }
-    .section-title{
-      margin: 30px 0 14px;
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--text);
-    }
-    .video-list{
-      display:grid;
-      gap:16px;
-    }
-    .video-item{
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      overflow:hidden;
-      box-shadow: 0 6px 24px rgba(18, 38, 63, .05);
-    }
-    .video-head{
-      display:flex;
-      justify-content:space-between;
-      gap:12px;
-      align-items:center;
-      padding: 14px 16px;
-      background: linear-gradient(90deg, rgba(31,111,235,.08), rgba(233,125,47,.08));
-      border-bottom: 1px solid rgba(31,111,235,.12);
-    }
-    .video-name{
-      font-weight: 700;
-      font-size: 15px;
-    }
-    .video-tag{
-      font-size: 12px;
-      color: var(--muted);
-    }
-    video{
-      width:100%;
-      display:block;
-      background:#000;
-      aspect-ratio: 16 / 9;
-    }
-    .footer{
-      margin-top: 24px;
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.7;
-      padding-top: 14px;
-      border-top: 1px solid rgba(31,111,235,.12);
-    }
-    .accent-a{color:var(--accent)}
-    .accent-b{color:var(--accent-2)}
-    .accent-c{color:var(--accent-3)}
-    @media (max-width: 640px){
-      .shell{padding: 20px 14px 36px;}
-      .hero{padding-top: 18px;}
-      .video-head{flex-direction:column; align-items:flex-start;}
-    }
+    body{margin:0;font-family:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:linear-gradient(180deg,#eff5ff 0%,#f7fafc 240px,var(--bg) 100%);color:var(--text)}
+    .shell{max-width:1100px;margin:0 auto;padding:28px 20px 48px}
+    .hero{padding:28px 0 18px;border-bottom:1px solid rgba(31,111,235,.14)}
+    .kicker{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;background:rgba(31,111,235,.08);color:var(--accent);font-size:13px;font-weight:600}
+    h1{margin:14px 0 10px;font-size:clamp(34px,5vw,54px);line-height:1.08}
+    .lead{max-width:760px;margin:0;font-size:17px;line-height:1.75;color:var(--muted)}
+    .meta{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px;color:var(--muted);font-size:14px}
+    .meta span{padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.7)}
+    .section-title{margin:30px 0 14px;font-size:18px;font-weight:700}
+    .video-list{display:grid;gap:16px}
+    .video-item{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 6px 24px rgba(18,38,63,.05)}
+    .video-head{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:14px 16px;background:linear-gradient(90deg,rgba(31,111,235,.08),rgba(233,125,47,.08));border-bottom:1px solid rgba(31,111,235,.12)}
+    .video-name{font-weight:700;font-size:15px}
+    .video-tag{font-size:12px;color:var(--muted)}
+    video{width:100%;display:block;background:#000;aspect-ratio:16/9}
+    .footer{margin-top:24px;color:var(--muted);font-size:13px;line-height:1.7;padding-top:14px;border-top:1px solid rgba(31,111,235,.12)}
+    .accent-a{color:var(--accent)} .accent-b{color:var(--accent-2)} .accent-c{color:var(--accent-3)}
+    @media (max-width:640px){.shell{padding:20px 14px 36px}.hero{padding-top:18px}.video-head{flex-direction:column;align-items:flex-start}}
   </style>
 </head>
 <body>
@@ -134,10 +36,7 @@
     <header class="hero">
       <div class="kicker">视频观看页</div>
       <h1>中秋庆贺短片</h1>
-      <p class="lead">
-        这里收录了 5 条短片。你可以按顺序观看，也可以单独点开任意一条。
-        这个页面适合扫码直接打开，界面尽量做得清爽一点。
-      </p>
+      <p class="lead">这里收录了 5 条短片。你可以按顺序观看，也可以单独点开任意一条。这个页面适合扫码直接打开，界面尽量做得清爽一点。</p>
       <div class="meta">
         <span><span class="accent-a">●</span> 共 5 条视频</span>
         <span><span class="accent-b">●</span> 移动端可直接播放</span>
@@ -148,51 +47,15 @@
     <section>
       <div class="section-title">观看内容</div>
       <div class="video-list">
-        <article class="video-item">
-          <div class="video-head">
-            <div class="video-name">视频 1</div>
-            <div class="video-tag">video-1.mp4</div>
-          </div>
-          <video controls playsinline preload="metadata" src="video-1.mp4"></video>
-        </article>
-
-        <article class="video-item">
-          <div class="video-head">
-            <div class="video-name">视频 2</div>
-            <div class="video-tag">video-2.mp4</div>
-          </div>
-          <video controls playsinline preload="metadata" src="video-2.mp4"></video>
-        </article>
-
-        <article class="video-item">
-          <div class="video-head">
-            <div class="video-name">视频 3</div>
-            <div class="video-tag">video-3.mp4</div>
-          </div>
-          <video controls playsinline preload="metadata" src="video-3.mp4"></video>
-        </article>
-
-        <article class="video-item">
-          <div class="video-head">
-            <div class="video-name">视频 4</div>
-            <div class="video-tag">video-4.mp4</div>
-          </div>
-          <video controls playsinline preload="metadata" src="video-4.mp4"></video>
-        </article>
-
-        <article class="video-item">
-          <div class="video-head">
-            <div class="video-name">视频 5</div>
-            <div class="video-tag">video-5.mp4</div>
-          </div>
-          <video controls playsinline preload="metadata" src="video-5.mp4"></video>
-        </article>
+        <article class="video-item"><div class="video-head"><div class="video-name">视频 1</div><div class="video-tag">video-1.mp4</div></div><video controls playsinline preload="metadata" src="video-1.mp4"></video></article>
+        <article class="video-item"><div class="video-head"><div class="video-name">视频 2</div><div class="video-tag">video-2.mp4</div></div><video controls playsinline preload="metadata" src="video-2.mp4"></video></article>
+        <article class="video-item"><div class="video-head"><div class="video-name">视频 3</div><div class="video-tag">video-3.mp4</div></div><video controls playsinline preload="metadata" src="video-3.mp4"></video></article>
+        <article class="video-item"><div class="video-head"><div class="video-name">视频 4</div><div class="video-tag">video-4.mp4</div></div><video controls playsinline preload="metadata" src="video-4.mp4"></video></article>
+        <article class="video-item"><div class="video-head"><div class="video-name">视频 5</div><div class="video-tag">video-5.mp4</div></div><video controls playsinline preload="metadata" src="video-5.mp4"></video></article>
       </div>
     </section>
 
-    <div class="footer">
-      扫码后直接进入此页。若视频文件名改动，需要同步修改这里对应的 <code>src</code>。
-    </div>
+    <div class="footer">如果视频文件名改动，要同步修改这里对应的 <code>src</code>。</div>
   </main>
 </body>
 </html>
